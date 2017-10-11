@@ -1,0 +1,378 @@
+@import url(font-awesome.min.css);
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic");
+*,
+*:before,
+*:after {
+  box-sizing: border-box;  
+}
+.hr-gallery {
+margin-bottom: 0px;
+border: 2px;
+}
+
+.fat-hr {
+height:200px;
+background-color:black;
+}
+.site-footer {
+    display:inline-block;
+    background-color: #000000;
+    border-top:solid black 1px;
+    width: 103%;
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 0;
+    height:50px;
+}
+    
+    .li-footer{
+    display: inline;
+    list-style-type: none;
+    color: white;
+    align-content: center;
+    text-align: center;
+    bottom: 0;
+    }
+
+.heading_line_spacing {
+    line-height: 2px;
+}
+    .header_heading_line_spacing {
+     line-height: 3px;
+}
+
+
+.lower_text {
+    margin-left: 30px;
+    margin-right: 10px;
+    text-align-last: center;
+    margin-bottom: 100px;
+    margin-top:auto;
+}
+.lower_heading {
+    padding-top: 50px;
+    }
+body {
+  background: white;
+  overflow-x: hidden;
+border: #000000;
+}
+.gallery {
+  @media screen and (min-width: 801px) {
+    position: absolute;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000000;
+    padding-top: 10px;
+  }
+}
+
+.photo {
+  width: 20%;
+  position: relative;
+  background: #000000;
+  float: left;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding: 10px 10px 10px 10px;
+  transition: all 100ms ease-out;
+  transform: translateZ(0);
+}
+    img {
+    width: 100%;
+    height: auto;
+    position: static;    
+  }
+  
+  @media screen and (max-width: 400px) {
+    width: 90%;
+    transform: rotateZ(0deg) !important;
+    margin: 20px auto 0 auto; 
+    float: none;    
+  }
+  
+  @media screen and (min-width: 401px) {
+    &:hover {
+      transform: rotateZ(0deg) scale(1.2) !important;
+      z-index: 257 !important;
+      box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.1),
+                  0px 0px 29px rgba(0, 0, 0, 0.2);
+    }
+  }  
+  @media screen and (min-width: 401px) and (max-width: 600px) {    
+    width: 50%;    
+  }
+  @media screen and (min-width: 601px) and (max-width: 800px) {    
+    width: 33.3333%;    
+  }
+  @media screen and (min-width: 801px) and (max-width: 1000px) {
+    width: 25%;    
+  }
+  @media screen and (min-width: 1001px) {
+    width: 20%;    
+  }
+}
+body {margin:0;}
+/* Background of the Navigation Bar */
+.topnav {
+    background-color: #000000;
+    overflow: hidden;
+    position:fixed;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    top: 0;
+    padding-bottom: 25px;
+}
+
+/* Links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+    position: fixed:
+}
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+/* Section/Article */
+
+	section.special, article.special {
+		text-align: center;
+	}
+
+	header p {
+		color: rgba(255, 255, 255, 0.5);
+		position: relative;
+		top: -0.25em;
+	}
+
+	header h3 + p {
+		font-size: 1.1em;
+	}
+
+	header h4 + p,
+	header h5 + p,
+	header h6 + p {
+		font-size: 0.9em;
+	}
+
+	header.major {
+		margin: 0 0 3.5em 0;
+	}
+
+		header.major h2, header.major h3, header.major h4, header.major h5, header.major h6 {
+			border-bottom: solid 2px #fff;
+			display: inline-block;
+			padding-bottom: 1em;
+			position: relative;
+		}
+
+			header.major h2:after, header.major h3:after, header.major h4:after, header.major h5:after, header.major h6:after {
+				content: '';
+				display: block;
+				height: 1px;
+			}
+
+		header.major p {
+			color: #fff;
+			top: 0;
+		}
+
+		@media screen and (max-width: 736px) {
+
+			header.major {
+				margin: 0 0 2em 0;
+			}
+
+		}
+
+	@media screen and (max-width: 980px) {
+
+		header br {
+			display: none;
+		}
+
+	}
+/* Spotlight */
+
+	.spotlight {
+		-moz-align-items: center;
+		-webkit-align-items: center;
+		-ms-align-items: center;
+		align-items: center;
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+	}
+
+		.spotlight .image {
+			-moz-order: 1;
+			-webkit-order: 1;
+			-ms-order: 1;
+			order: 1;
+			border-radius: 0;
+			width: 40%;
+		}
+
+			.spotlight .image img {
+				border-radius: 0;
+				width: 100%;
+			}
+
+		.spotlight .content {
+			padding: 2em 4em 0.1em 4em ;
+			-moz-order: 2;
+			-webkit-order: 2;
+			-ms-order: 2;
+			order: 2;
+			max-width: 48em;
+			width: 60%;
+		}
+
+		.spotlight:nth-child(2n) {
+			-moz-flex-direction: row-reverse;
+			-webkit-flex-direction: row-reverse;
+			-ms-flex-direction: row-reverse;
+			flex-direction: row-reverse;
+		}
+
+		.spotlight:nth-child(1) {
+			background-color: rgba(0, 0, 0, 0.075);
+		}
+
+		.spotlight:nth-child(2) {
+			background-color: rgba(0, 0, 0, 0.15);
+		}
+
+		.spotlight:nth-child(3) {
+			background-color: rgba(0, 0, 0, 0.225);
+		}
+
+		.spotlight:nth-child(4) {
+			background-color: rgba(0, 0, 0, 0.3);
+		}
+
+		.spotlight:nth-child(5) {
+			background-color: rgba(0, 0, 0, 0.375);
+		}
+
+		.spotlight:nth-child(6) {
+			background-color: rgba(0, 0, 0, 0.45);
+		}
+
+		.spotlight:nth-child(7) {
+			background-color: rgba(0, 0, 0, 0.525);
+		}
+
+		.spotlight:nth-child(8) {
+			background-color: rgba(0, 0, 0, 0.6);
+		}
+
+		.spotlight:nth-child(9) {
+			background-color: rgba(0, 0, 0, 0.675);
+		}
+
+		.spotlight:nth-child(10) {
+			background-color: rgba(0, 0, 0, 0.75);
+		}
+
+		@media screen and (max-width: 1280px) {
+
+			.spotlight .image {
+				width: 45%;
+			}
+
+			.spotlight .content {
+				width: 55%;
+			}
+
+		}
+
+		@media screen and (max-width: 980px) {
+
+			.spotlight {
+				display: block;
+			}
+
+				.spotlight br {
+					display: none;
+				}
+
+				.spotlight .image {
+					width: 100%;
+				}
+
+				.spotlight .content {
+					padding: 4em 3em 2em 3em ;
+					max-width: none;
+					text-align: center;
+					width: 100%;
+				}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			.spotlight .content {
+				padding: 3em 2em 1em 2em ;
+			}
+
+		}
